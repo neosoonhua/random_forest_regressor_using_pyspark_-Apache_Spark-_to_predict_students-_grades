@@ -22,9 +22,6 @@ Created on Fri Nov 19 22:48:59 2021
 # limitations under the License.
 #
 
-"""
-Random Forest Regressor Example.
-"""
 # $example on$
 from pyspark.ml import Pipeline
 from pyspark.ml.regression import RandomForestRegressor
@@ -36,7 +33,7 @@ from pyspark.sql import SparkSession
 if __name__ == "__main__":
     spark = SparkSession\
         .builder\
-        .appName("RandomForestRegressorToPredictStudentsMarks")\
+        .appName("RandomForestRegressorToPredictStudentsGrades")\
         .getOrCreate()
 
     # $example on$
